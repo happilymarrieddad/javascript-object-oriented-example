@@ -9,3 +9,7 @@ var Circle = require('./classes/Circle');
 var circle = new Circle('Example Circle',5);
 console.log(circle.getCircumference());
 console.log(circle.getCircumferenceWithLimit(2));
+
+circle.setRadius(1);
+
+console.log(circle.getRadius());

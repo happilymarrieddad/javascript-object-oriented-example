@@ -7,6 +7,7 @@ class Circle extends require('./Shapes') {
 
 		super(name);
 		this._radius = radius;
+
 	}
 
 	getRadius() {
@@ -19,6 +20,11 @@ class Circle extends require('./Shapes') {
 
 	getCircumferenceWithLimit(limit) {
 		return (parseFloat(this._radius * 2 * Math.PI).toFixed(limit));
+	}
+
+	setRadius(radius) {
+		this._radius = radius;
+		return this;
 	}
 
 }
